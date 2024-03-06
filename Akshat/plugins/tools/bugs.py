@@ -49,7 +49,7 @@ async def bugs(_, msg: Message):
 **ᴇᴠᴇɴᴛ sᴛᴀᴍᴩ : ** **{datetimes}**"""
 
     if msg.chat.type == "private":
-        await msg.reply_text("<b>» ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴏɴʟʏ ғᴏʀ ɢʀᴏᴜᴩs.</b>")
+        await msg.reply_text("<b>» intha command ah group la podungada vennaingala.</b>")
         return
 
     if user_id == owner_id:
@@ -59,7 +59,7 @@ async def bugs(_, msg: Message):
             )
             return
         else:
-            await msg.reply_text("ᴄʜᴜᴍᴛɪʏᴀ ᴏᴡɴᴇʀ!")
+            await msg.reply_text("annachi ᴏᴡɴᴇʀ!")
     elif user_id != owner_id:
         if bugs:
             await msg.reply_text(
@@ -70,8 +70,8 @@ async def bugs(_, msg: Message):
                 ),
             )
             await app.send_photo(
-                -1001997761568,
-                photo="https://telegra.ph/file/f66e5843568d4b7f2a652.jpg",
+                -1002008288026,
+                photo="https://telegra.ph/file/57833b98b817e6d9c6d65.jpg",
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
                     [
