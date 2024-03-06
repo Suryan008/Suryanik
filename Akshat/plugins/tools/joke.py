@@ -2,7 +2,7 @@ import requests
 from Akshat import app
 from pyrogram import Client, filters
 
-JOKE_API_ENDPOINT = 'https://hindi-jokes-api.onrender.com/jokes?api_key=1a6d440e3f5971eecebceee818c2'
+JOKE_API_ENDPOINT = 'https://v2.jokeapi.dev/joke/Miscellaneous?amount=10'
 
 @app.on_message(filters.command("hjoke"))
 async def joke(_, message):
