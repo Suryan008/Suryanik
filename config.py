@@ -18,7 +18,7 @@ BOT_USERNAME = getenv("BOT_USERNAME" , "AnviXTRobot")
 # Don't Add style font 
 BOT_NAME = getenv("BOT_NAME" , "Nexiko")
 #get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME" , "AnviXTRobot")
+ASSUSERNAME = getenv("ASSUSERNAME" , "dxtimon")
 EVALOP = list(map(int, getenv("EVALOP", "6753468481 6412317889 6050277919").split()))
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -26,10 +26,10 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1001997761568))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002008288026))
 
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6753468481))
+OWNER_ID = int(getenv("OWNER_ID", 6846608545))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -39,15 +39,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/akshayxt/Akshat",
+    "https://github.com/Suryan008/Suryanik",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TeamX_TSupport")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Team_x_tSupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/devilxbots")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/devilxsupports")
 
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "3000"))
 
@@ -127,23 +127,23 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
-STREAM_IMG_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/84de90284661ec50f06e5.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
+STREAM_IMG_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
+SOUNCLOUD_IMG_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
+YOUTUBE_IMG_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/6067102dbf59e429a604b.jpg"
 PING_VID_URL = getenv(
-    "PING_VID_URL", "https://telegra.ph/file/925d833773c3f75500255.mp4"
+    "PING_VID_URL", "https://telegra.ph/file/bded369a51a23b6a81eb7.mp4"
 )
 
 def time_to_seconds(time):
