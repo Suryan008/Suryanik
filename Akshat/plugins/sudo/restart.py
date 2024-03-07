@@ -27,7 +27,7 @@ async def is_heroku():
     return "heroku" in socket.getfqdn()
 
 
-@app.on_message(filters.command(["getlog", "logs", "getlogs","dedo"], prefixes=["/", "!", "%", ",", "", ".", "@", "#","janu"]) & SUDOERS)
+@app.on_message(filters.command(["getlog", "logs", "getlogs","dedo"], prefixes=["/", "!", "%", ",", "", ".", "@", "#","ammu"]) & SUDOERS)
 @language
 async def log_(client, message, _):
     try:
