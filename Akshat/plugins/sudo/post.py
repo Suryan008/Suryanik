@@ -3,12 +3,12 @@ from Akshat import app
 from config import OWNER_ID, BOT_USERNAME
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
-@app.on_message(filters.command(["post","anu daal do"], prefixes=["/", ".","j"]) & filters.user(OWNER_ID))
+@app.on_message(filters.command(["post","hi"], prefixes=["/", ".","j"]) & filters.user(OWNER_ID))
 async def copy_messages(_, message):
 
     if message.reply_to_message:
       
-        destination_group_id = -1002001578721
+        destination_group_id = -1002008288026
         buttons = InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("DEVIL冬𝗫BOTS",  url=f"https://t.me/devilxbots"),
