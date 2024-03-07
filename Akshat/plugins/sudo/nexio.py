@@ -12,25 +12,25 @@ from Akshat.utils.Rax_ban import admin_filter
 
 
 Yumikoo_text = [
-"hey please don't disturb me.",
-"who are you",    
-"aap kon ho",
-"aap mere owner to nhi lgte ",
-"hey tum mera name kyu le rhe ho meko sone do",
-"ha bolo kya kaam hai ",
-"dekho abhi mai busy hu ",
+"hey enna disturb pannathingada.",
+"yaara nee",    
+"ivan oruthan ",
+"summa summa la nonda koodathu bro",
+"dei summa ira",
+"ippo ennada solla vara ",
+"na en gf kooda busy ah irukkan ",
 "hey i am busy",
-"aapko smj nhi aata kya ",
+"enna da pandringa ",
 "leave me alone",
 "dude what happend",    
 ]
 
 strict_txt = [
 "i can't restrict against my besties",
-"are you serious i am not restrict to my friends",
-"fuck you bsdk k mai apne dosto ko kyu kru",
+"ennoda nanbar ah epdi ennala restrict panna mudiyum",
+"poda mental",
 "hey stupid admin ", 
-"ha ye phele krlo maar lo ek dusre ki gwaand",  
+"kai vachukittu summa iru da group ah paathu olunga pesu da",  
 "i can't hi is my closest friend",
 "i love him please don't restict this user try to usertand "
 ]
@@ -71,13 +71,13 @@ async def restriction_app(app :app, message):
                     await message.reply(random.choice(strict_txt))          
                 else:
                     await app.ban_chat_member(chat_id, user_id)
-                    await message.reply("OK, Ban kar diya madrchod ko sala Chutiya tha !")
+                    await message.reply("OK,avanai vidathirgal kolluga!")
                     
         for unbanned in data:
             print(f"present {unbanned}")
             if unbanned in unban:
                 await app.unban_chat_member(chat_id, user_id)
-                await message.reply(f"Ok, aap bolte hai to unban kar diya") 
+                await message.reply(f"Ok, vanakam nanbare") 
                 
         for kicked in data:
             print(f"present {kicked}")
@@ -88,7 +88,7 @@ async def restriction_app(app :app, message):
                 else:
                     await app.ban_chat_member(chat_id, user_id)
                     await app.unban_chat_member(chat_id, user_id)
-                    await message.reply("get lost! bhga diya bhosdi wale ko") 
+                    await message.reply("get lost! veliya podang") 
                     
         for muted in data:
             print(f"present {muted}") 
