@@ -9,11 +9,11 @@ def help_pannel(_, START: Union[bool, int] = None):
     first = [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=f"close")]
     second = [
         InlineKeyboardButton(
-            text=_["BACK_PAGE"],
+            text=_["FRONT_PAGE"],
             callback_data=f"mbot_cb",
         ),
         InlineKeyboardButton(
-            text=_["BACK_BUTTON"],
+            text=_["FRONT_BUTTON"],
             callback_data=f"settingsback_helper",
         ),
         InlineKeyboardButton(
